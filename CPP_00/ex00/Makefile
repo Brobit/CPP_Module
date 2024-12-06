@@ -1,12 +1,12 @@
 NAME = megaphone
 
-CC = cc
+CC = g++
 
 FLAGS = -Wall -Wextra -Werror -g -std=c++98
 
 SOURCES = ./Megaphone.cpp
 
-OBJ = {SOURCES:.cpp=.o}
+OBJ = ${SOURCES:.cpp=.o}
 
 INCLUDES = 
 
