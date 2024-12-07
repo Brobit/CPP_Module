@@ -1,5 +1,4 @@
 #include "./Contact.hpp"
-#include <cstddef>
 #include <iomanip>
 #include <iostream>
 #include <sstream>
@@ -7,7 +6,6 @@
 
 Contact::Contact()
 {
-	std::cout << "Contact constructor called" << std::endl;
 }
 
 void Contact::setContact(const std::string firstName, const std::string lastName,
@@ -58,5 +56,4 @@ void	Contact::displayHeader(int index)
 
 Contact::~Contact()
 {
-	std::cout << "Contact destroyer called" << std::endl;
 }

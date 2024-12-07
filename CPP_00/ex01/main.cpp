@@ -18,6 +18,11 @@ int	main(void)
 		std::cout << "Which command would you like to use ? : ";
 		std::getline(std::cin, commandLine);
 
+		if (std::cin.eof())
+		{
+			std::cin.clear();
+			return (0);
+		}
 		if (commandLine == "ADD")
 		{
 			std::string firstName, lastName, nickName, phoneNumber, darkestSecret;
@@ -47,6 +52,9 @@ int	main(void)
 			return (std::cout << "See you soon !" << std::endl, 0);
 		else
 			std::cout << COMMAND << std::endl;
+		commandLine.clear();
+		std::cin.clear();
+		// std::cin.ignore(10000, '\n');
 	}
 	return (0);
 }

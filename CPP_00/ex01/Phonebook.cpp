@@ -7,7 +7,6 @@
 
 Phonebook::Phonebook() : _indexContactToAdd(0), _totalContact(0)
 {
-	std::cout << "Phonebook constructor called" << std::endl;
 }
 
 void	Phonebook::addContact(const Contact &newContact)
@@ -25,8 +24,11 @@ bool	Phonebook::_getUserInput(std::string &userInput, int &index)
 	std::cout << "Enter index to display ! : ";
 
 	std::getline(std::cin, userInput);
-	if (!std::cin)
-		return (std::cin.eof(), false);
+	if (userInput.empty())
+	{
+		std::cin.clear();
+		return (false);
+	}
 	for (std::string::size_type i = 0; i < userInput.length(); i++) {
 		if (!std::isdigit(userInput[i]))
 			return (false);
@@ -48,13 +50,14 @@ bool	Phonebook::searchContact()
 	int			index;
 
 	std::cout << "Contact list :" << std::endl;
+	std::cout << "|    index|first name| last name|  nickname" << std::endl;
 	for (int i = 0; i < _totalContact; i++) {
 		_contactList[i].displayHeader(i + 1);
 	}
 
-	if (!Phonebook::_getUserInput(userInput, index))
+	if (!_getUserInput(userInput, index))
 		return (std::cout << "Invalid input !" << std::endl, false);
-	if (!Phonebook::_checkIndex(index))
+	if (!_checkIndex(index))
 		return (std::cout << "Invalid index !" << std::endl, false);
 	_contactList[index - 1].displayContact();
 	return (true);
@@ -62,5 +65,4 @@ bool	Phonebook::searchContact()
 
 Phonebook::~Phonebook()
 {
-	std::cout << "Phonebook destroyer called" << std::endl;
 }
