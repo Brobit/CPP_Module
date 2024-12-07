@@ -1,6 +1,5 @@
 #pragma once
 #include "Contact.hpp"
-#include <cstddef>
 #include <string>
 
 class Phonebook {
@@ -11,8 +10,8 @@ class Phonebook {
 		~Phonebook();
 	private:
 		Contact			_contactList[8];
-		std::size_t		_indexContactToAdd;
-		std::size_t		_totalContact;
+		int				_indexContactToAdd;
+		int				_totalContact;
 		bool			_getUserInput(std::string &userInput, int &index);
 		bool			_checkIndex(int index) const;
 };

@@ -1,7 +1,7 @@
 #include "./Phonebook.hpp"
 #include "Contact.hpp"
 #include <cctype>
-#include <cstddef>
+#include <cstdlib>
 #include <iostream>
 #include <string>
 
@@ -31,7 +31,7 @@ bool	Phonebook::_getUserInput(std::string &userInput, int &index)
 		if (!std::isdigit(userInput[i]))
 			return (false);
 	}
-	index = std::atoi(userInput.c_str());
+	index = atoi(userInput.c_str());
 	return (true);
 }
 
@@ -48,7 +48,7 @@ bool	Phonebook::searchContact()
 	int			index;
 
 	std::cout << "Contact list :" << std::endl;
-	for (std::size_t i = 0; i < _totalContact; i++) {
+	for (int i = 0; i < _totalContact; i++) {
 		_contactList[i].displayHeader(i + 1);
 	}
 

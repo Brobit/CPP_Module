@@ -38,7 +38,7 @@ std::string	Contact::_formatColumn(std::string &str)
 		return (std::string(10 - str.length(), ' ') + str);
 }
 
-std::string	Contact::_castToString(std::size_t i)
+std::string	Contact::_castToString(int i)
 {
 	std::ostringstream	streamString;
 	std::string			str;
@@ -47,7 +47,7 @@ std::string	Contact::_castToString(std::size_t i)
 	return (str);
 }
 
-void	Contact::displayHeader(std::size_t index)
+void	Contact::displayHeader(int index)
 {
 	std::cout << "|" << std::setw(9) << index
 		<< "|" << Contact::_formatColumn(this->_firstName)

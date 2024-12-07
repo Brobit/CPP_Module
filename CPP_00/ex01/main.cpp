@@ -34,7 +34,7 @@ int	main(void)
 			std::cout << "Darkest secret : ";
 			std::getline(std::cin, darkestSecret);
 
-			const Contact newContact;
+			Contact newContact;
 			newContact.setContact(firstName, lastName, nickName, phoneNumber, darkestSecret);
 			phonebook.addContact(newContact);
 		}

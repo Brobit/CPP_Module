@@ -8,9 +8,6 @@ SOURCES = ./main.cpp\
 		  ./Phonebook.cpp\
 		  ./Contact.cpp
 
-INCLUDES = ./Phonebook.hpp\
-		   ./Contact.hpp
-
 OBJ = ${SOURCES:.cpp=.o}
 
 all : ${NAME}
@@ -19,7 +16,7 @@ ${NAME} : ${OBJ}
 	${CC} ${FLAGS} ${OBJ} -o $@ 
 
 %.o : %.cpp
-	${CC} ${FLAGS} ${INCLUDES} -c $< -o $@ 
+	${CC} ${FLAGS} -c $< -o $@ 
 
 clean :
 	${RM} ${OBJ}
