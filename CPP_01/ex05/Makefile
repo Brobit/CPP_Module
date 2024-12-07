@@ -1,10 +1,11 @@
-NAME = megaphone
+NAME = Harl_2.0
 
 CC = g++
 
 FLAGS = -Wall -Wextra -Werror -g -std=c++98
 
-SOURCES = ./Megaphone.cpp
+SOURCES = ./main.cpp\
+		  ./Harl.cpp
 
 OBJ = ${SOURCES:.cpp=.o}
 

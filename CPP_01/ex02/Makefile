@@ -1,10 +1,10 @@
-NAME = megaphone
+NAME = HI_THIS_IS_BRAIN
 
 CC = g++
 
 FLAGS = -Wall -Wextra -Werror -g -std=c++98
 
-SOURCES = ./Megaphone.cpp
+SOURCES = ./main.cpp
 
 OBJ = ${SOURCES:.cpp=.o}
 

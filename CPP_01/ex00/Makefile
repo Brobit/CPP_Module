@@ -1,10 +1,13 @@
-NAME = megaphone
+NAME = BraiiiiiiinnnzzzZ
 
 CC = g++
 
 FLAGS = -Wall -Wextra -Werror -g -std=c++98
 
-SOURCES = ./Megaphone.cpp
+SOURCES = ./main.cpp\
+		  ./Zombie.cpp\
+		  ./newZombie.cpp\
+		  ./randomChump.cpp
 
 OBJ = ${SOURCES:.cpp=.o}
 

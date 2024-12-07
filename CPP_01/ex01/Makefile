@@ -1,10 +1,12 @@
-NAME = megaphone
+NAME = Moar_brainz!
 
 CC = g++
 
 FLAGS = -Wall -Wextra -Werror -g -std=c++98
 
-SOURCES = ./Megaphone.cpp
+SOURCES = ./main.cpp\
+		  ./Zombie.cpp\
+		  ./zombieHorde.cpp
 
 OBJ = ${SOURCES:.cpp=.o}
 

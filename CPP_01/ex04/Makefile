@@ -1,10 +1,10 @@
-NAME = megaphone
+NAME = Sed_is_for_losers
 
 CC = g++
 
 FLAGS = -Wall -Wextra -Werror -g -std=c++98
 
-SOURCES = ./Megaphone.cpp
+SOURCES = ./main.cpp
 
 OBJ = ${SOURCES:.cpp=.o}
 

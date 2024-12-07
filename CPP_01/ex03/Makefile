@@ -1,10 +1,13 @@
-NAME = megaphone
+NAME = Unnecessary_NAME = Unnecessary_violence
 
 CC = g++
 
 FLAGS = -Wall -Wextra -Werror -g -std=c++98
 
-SOURCES = ./Megaphone.cpp
+SOURCES = ./main.cpp\
+		  ./HumanA.cpp\
+		  ./HumanB.cpp\
+		  ./Weapon.cpp
 
 OBJ = ${SOURCES:.cpp=.o}
 
