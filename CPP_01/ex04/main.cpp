@@ -25,9 +25,9 @@ bool	searchAndReplace(const std::string &filename, const std::string &s1, const 
 		return (std::cout << "Error occur while creating the output file" << std::endl, inputFile.close(), false);
 
 	std::string line;
+	std::string lineToPut;
 	while (std::getline(inputFile, line))
 	{
-		std::string lineToPut;
 		for (std::string::size_type i = 0; i < line.length(); i++) {
 			if (line.substr(i, s1.length()) == s1)
 			{
@@ -38,6 +38,7 @@ bool	searchAndReplace(const std::string &filename, const std::string &s1, const 
 				lineToPut += line[i];
 		}
 		outputFile << lineToPut << std::endl;
+		lineToPut.clear();
 	}
 	return (true);
 }
