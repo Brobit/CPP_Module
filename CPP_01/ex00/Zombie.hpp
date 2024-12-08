@@ -10,6 +10,3 @@ class Zombie {
 	private:
 		std::string	_name;
 };
-
-Zombie*	newZombie(const std::string &name);
-void	randomChump(const std::string &name);
