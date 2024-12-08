@@ -1,4 +1,4 @@
-NAME = Unnecessary_NAME = Unnecessary_violence
+NAME = Unnecessary_violence
 
 CC = c++
 
