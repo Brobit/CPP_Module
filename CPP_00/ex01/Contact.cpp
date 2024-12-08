@@ -48,10 +48,10 @@ std::string	Contact::_castToString(int i)
 void	Contact::displayHeader(int index)
 {
 	std::cout << "|" << std::setw(9) << index
-		<< "|" << Contact::_formatColumn(this->_firstName)
-		<< "|" << Contact::_formatColumn(this->_lastName)
-		<< "|" << Contact::_formatColumn(this->_nickName)
-		<< std::endl;
+			<< "|" << Contact::_formatColumn(this->_firstName)
+			<< "|" << Contact::_formatColumn(this->_lastName)
+			<< "|" << Contact::_formatColumn(this->_nickName)
+			<< std::endl;
 }
 
 Contact::~Contact()

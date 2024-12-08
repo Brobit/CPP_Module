@@ -19,10 +19,7 @@ int	main(void)
 		std::getline(std::cin, commandLine);
 
 		if (std::cin.eof())
-		{
-			std::cin.clear();
-			return (0);
-		}
+			return (std::cin.clear(), 0);
 		if (commandLine == "ADD")
 		{
 			std::string firstName, lastName, nickName, phoneNumber, darkestSecret;
@@ -50,11 +47,9 @@ int	main(void)
 		}
 		else if (commandLine == "EXIT")
 			return (std::cout << "See you soon !" << std::endl, 0);
-		else
-			std::cout << COMMAND << std::endl;
+		std::cout << COMMAND << std::endl;
 		commandLine.clear();
 		std::cin.clear();
-		// std::cin.ignore(10000, '\n');
 	}
 	return (0);
 }

@@ -25,10 +25,8 @@ bool	Phonebook::_getUserInput(std::string &userInput, int &index)
 
 	std::getline(std::cin, userInput);
 	if (userInput.empty())
-	{
-		std::cin.clear();
-		return (false);
-	}
+		return (std::cin.clear(), false);
+
 	for (std::string::size_type i = 0; i < userInput.length(); i++) {
 		if (!std::isdigit(userInput[i]))
 			return (false);
@@ -51,6 +49,7 @@ bool	Phonebook::searchContact()
 
 	std::cout << "Contact list :" << std::endl;
 	std::cout << "|    index|first name| last name|  nickname" << std::endl;
+
 	for (int i = 0; i < _totalContact; i++) {
 		_contactList[i].displayHeader(i + 1);
 	}
