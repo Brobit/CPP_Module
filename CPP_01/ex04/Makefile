@@ -1,6 +1,6 @@
 NAME = Sed_is_for_losers
 
-CC = g++
+CC = c++
 
 FLAGS = -Wall -Wextra -Werror -g -std=c++98
 

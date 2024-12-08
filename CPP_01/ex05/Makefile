@@ -1,6 +1,6 @@
 NAME = Harl_2.0
 
-CC = g++
+CC = c++
 
 FLAGS = -Wall -Wextra -Werror -g -std=c++98
 
