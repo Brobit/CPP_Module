@@ -8,8 +8,8 @@ class Harl {
 		~Harl();
 
 	private:
-		void	_debug();
-		void	_info();
-		void	_warning();
-		void	_error();
+		void	debug();
+		void	info();
+		void	warning();
+		void	error();
 };
