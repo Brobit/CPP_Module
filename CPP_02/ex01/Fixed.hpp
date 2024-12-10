@@ -1,4 +1,5 @@
 #include <ostream>
+
 class Fixed {
 	public:
 		Fixed();
