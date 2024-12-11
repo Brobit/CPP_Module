@@ -13,11 +13,19 @@ int main() {
 
     std::cout << "\n--- Overdriving ClapTrap ---" << std::endl;
     clap2.takeDamage(20);
-    clap1.attack("nothing"); // Test energy management
-    clap1.attack("nothing again"); // Energy exhausted
+	clap2.beRepaired(2);
+    clap1.attack("nothing");
+    clap1.attack("nothing again");
+    clap1.attack("nothing again");
+    clap1.attack("nothing again");
+    clap1.attack("nothing again");
+    clap1.attack("nothing again");
+    clap1.attack("nothing again");
 
     std::cout << "\n--- Cloning ClapTrap ---" << std::endl;
     ClapTrap clap3 = clap1;
+    clap3.attack("a clone target");
+    clap3.attack("a clone target");
     clap3.attack("a clone target");
 
     std::cout << "\n--- Destructing ClapTraps ---" << std::endl;
