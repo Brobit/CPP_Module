@@ -30,6 +30,11 @@ void	ScavTrap::guardGate()
 	std::cout << "ScavTrap : " << this->_name << " is now in Gate Keeper mode !" << std::endl;
 }
 
+void	ScavTrap::attack(const std::string &target)
+{
+	std::cout << "ScavTrap : " << this->_name << " attack " << target << " and cause " << this->_attackDamage << " points of damage, for the glory of the Borderlands !!!" << std::endl;
+}
+
 ScavTrap::~ScavTrap()
 {
 	std::cout << "Destructor called for ScavTrap : " << this->_name << std::endl;
