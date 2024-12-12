@@ -5,7 +5,9 @@ CC = c++
 FLAGS = -Wall -Wextra -Werror -g -std=c++98
 
 SOURCES = ./main.cpp\
-		  ./ClapTrap.cpp
+		  ./ClapTrap.cpp\
+		  ./ScavTrap.cpp\
+		  ./FragTrap.cpp
 
 OBJ = ${SOURCES:.cpp=.o}
 
