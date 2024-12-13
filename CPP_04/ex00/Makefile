@@ -4,7 +4,10 @@ CC = c++
 
 FLAGS = -Wall -Wextra -Werror -g -std=c++98
 
-SOURCES = ./main.cpp
+SOURCES = ./main.cpp\
+		  ./Animal.cpp\
+		  ./Cat.cpp\
+		  ./Dog.cpp
 
 OBJ = ${SOURCES:.cpp=.o}
 

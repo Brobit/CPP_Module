@@ -31,6 +31,11 @@ void	Animal::makeSound() const
 	std::cout << "RRRRRRRRRRRRRRRRRRRRRRRRR!" << std::endl;
 }
 
+std::string	Animal::getType() const
+{
+	return (this->_type);
+}
+
 Animal::~Animal() {
 	std::cout << "Destructor of Animal class called !" << std::endl;
 }
