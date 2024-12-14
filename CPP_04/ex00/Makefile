@@ -7,7 +7,9 @@ FLAGS = -Wall -Wextra -Werror -g -std=c++98
 SOURCES = ./main.cpp\
 		  ./Animal.cpp\
 		  ./Cat.cpp\
-		  ./Dog.cpp
+		  ./Dog.cpp\
+		  ./WrongAnimal.cpp\
+		  ./WrongCat.cpp
 
 OBJ = ${SOURCES:.cpp=.o}
 
