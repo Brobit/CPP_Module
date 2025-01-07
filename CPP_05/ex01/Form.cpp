@@ -24,6 +24,7 @@ Form::Form(Form const &copy) : _name(copy._name), _isSigned(copy._isSigned), _gr
 }
 
 Form &Form::operator=(Form const &other) {
+	std::cout << "Copy assignment operator of the Form class called !" << std::endl;
 	if (this != &other)
 		this->_isSigned = other.getIsSigned();
 	return (*this);
